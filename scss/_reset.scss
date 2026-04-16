@@ -1,0 +1,58 @@
+/* 1. 모든 요소의 여백 초기화 및 박스 사이징 설정 */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 패딩과 테두리가 너비에 포함되도록 (매우 중요!) */
+  }
+  
+  /* 2. HTML, Body 기본 설정 */
+  html {
+    font-size: 16px; /* 기본 폰트 크기 */
+    -webkit-text-size-adjust: 100%; /* 모바일에서 텍스트 크기 자동 조절 방지 */
+  }
+  
+  body {
+    line-height: 1.4; /* 가독성을 위한 줄간격 */
+    font-weight: 400;
+    font-family: "DM Sans", "Nanum Gothic", sans-serif;
+    color: #333;
+    word-break: keep-all; /* 한글 단어 잘림 방지 (디테일) */
+  }
+  
+  /* 3. 리스트 스타일 제거 (점, 숫자 제거) */
+  ol, ul, li {
+    list-style: none;
+  }
+  
+  /* 4. 링크 스타일 초기화 */
+  a {
+    text-decoration: none;
+    color: inherit; /* 부모 색상을 따라가도록 */
+    cursor: pointer;
+  }
+  
+  /* 5. 이미지 및 미디어 최적화 */
+  img, svg, video, canvas {
+    display: block; /* 하단 미세 여백 제거 */
+    max-width: 100%; /* 부모 너비를 넘지 않도록 */
+    height: auto;
+  }
+  
+  /* 6. 버튼 및 입력창 초기화 (디자인 입히기 편하게) */
+  button, input, select, textarea {
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* 7. 테이블 초기화 */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
