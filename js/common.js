@@ -51,6 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }, 300));
+
+        /* 3. Badges signin 안보이게 */
+        // 현재페이지 경로 확인
+        const path = window.location.pathname;
+        const banner = document.querySelector('header .badges');
+        // 메인에만 노출됨
+        if (path.includes('/sign-in/')) {
+            banner.style.display = 'none';
+        } else {
+            banner.style.display = 'block';
+        }
     });
 
     /* footer 파일 불러옴 */
@@ -97,5 +108,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }));
+
+        /* 4. #to-top signin 안보이게 */
+        const path = window.location.pathname;
+        if (path.includes('/sign-in/')) {
+            toTopEl.style.display = 'none';
+        } else {
+            toTopEl.style.display = 'flex';
+        }
     });
 });
