@@ -3,8 +3,7 @@
 각 섹션별로 UI를 구성하고 SCSS와 JavaScript를 활용하여 역동적인 애니메이션 효과를 구현했습니다.
 
 ## 🔗 Live Demo
-> **배포 주소:**   
-> https://gorgeous-dango-fc3641.netlify.app/
+> **배포 주소 :**   <a href="https://gorgeous-dango-fc3641.netlify.app/" target="_blank">자세히 보기</a>
 
 ## 🛠 Tech Stack
 - **HTML5** : 구조적인 웹 페이지 설계
